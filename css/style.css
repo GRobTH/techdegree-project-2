@@ -1,0 +1,250 @@
+
+/* Web Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.6;
+    font-family: 'Open Sans', sans-serif;
+    /* background-color: rgb(250, 250, 250); */
+    background-color: #fff;
+    text-align: center;
+    color: rgb(74, 74, 74);
+    font-size: 1em;
+}
+
+main {
+    padding: 0 20px;
+}
+
+footer {
+    padding: 20px 20px;
+    background-color: rgb(250, 250, 250);
+}
+
+a {
+    text-decoration: none;
+    color: rgb(74, 74, 74);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 1em;
+    margin: 2.8em 0;
+}
+
+h4 {
+    font-weight: 900;
+    padding: 0;
+    margin: 0;
+}
+
+/* Layout Styles */
+
+.container {
+    font-weight: bolder;
+}
+
+.name {
+    font-size: 1.6em;
+}
+
+.intro {
+    margin-top: 50px;
+    color: rgb(250, 250, 250);
+}
+
+.intro img {
+    width: 75%;
+}
+
+main img {
+    width: 100%;
+}
+
+.main-header {
+    padding: 1em 1em;
+    background-color: rgb(250, 250, 250);
+}
+
+.main-nav a{
+    text-transform: uppercase;
+    font-size: 1em;
+    display: inline-block;
+}
+
+.main-nav li {
+    background-color: #fff;
+    padding: 5px;
+    margin: 5px 10px;
+}
+
+.bottom-name {
+    float: left;
+}
+
+.top {
+    text-transform: uppercase;
+    float: right;
+}
+
+.bottom-nav {
+    padding: 10px;
+    font-weight: 900;
+}
+
+.bottom-nav-li{
+    display: none;
+}
+
+.main-content {
+    background-color: #fff;
+}
+
+.phone,
+.email {
+    font-weight: 900;
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 768px) {
+
+    .main-nav li {
+        background-color: rgb(250, 250, 250);
+        padding: 5px;
+        margin: 5px 10px;
+        display: inline-block;
+    }
+
+    .intro {
+        margin-bottom: 3em;
+    }
+
+    .intro p {
+        float: left;
+        width: 55%;
+        
+    }
+
+    .intro img {
+        float: right;
+        width: 40%;
+        margin-left: 10px;
+    }
+
+    .main-sub-1,
+    .main-sub-3,
+    .main-sub-5 {
+        float: left;
+        width: 49%;
+    }
+
+    .main-sub-2,
+    .main-sub-4,
+    .main-sub-6 {
+        float: right;
+        width: 49%;
+    }
+
+    .mobile-only {
+        display: none;
+    }
+
+    .bottom-nav-li {
+        display: inline;
+    }
+
+    .bottom-nav-li li{
+        text-transform: uppercase;
+        float: left;
+        padding: 0;
+        margin: 0 10px;
+    } 
+
+    .top {
+        margin: 0;
+        padding: 0;
+    }
+
+}
+
+@media (min-width: 1024px) {
+
+    body {
+        background-color: rgb(250, 250, 250);
+    } 
+
+    .name {
+        float: left;
+    }
+
+    .main-nav {
+        float: right;
+    }
+
+    .main-nav li {
+        background-color: rgb(250, 250, 250);
+        padding: 5px;
+        margin: 5px 10px;
+        display: inline-block;
+    }
+
+    .intro img {
+        width: 40%;
+    }
+
+    .intro p {
+        text-align: left;
+        font-size: 1.3em;
+    }
+
+    footer p {
+        font-size: 1.3em;
+        padding: 0 10em;
+    }
+
+    .main-sub-1,
+    .main-sub-4 {
+        float: left;
+        width: 29%;
+        margin: 0 2%;
+       
+    }
+
+    .main-sub-2,
+    .main-sub-5 {
+        width: 29%;
+        float: left;
+        margin: 0 2%;
+    }
+
+    .main-sub-3,
+    .main-sub-6 {
+        float: right;
+        width: 29%;
+        margin: 0 2%;
+    }
+
+}
+
+
+/* ---- Float clearfix ---- */
+
+.clearfix::after {
+    content: " ";
+    display: table;
+    clear: both;
+}
