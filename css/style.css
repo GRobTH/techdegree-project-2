@@ -1,7 +1,7 @@
 
 /* Web Fonts */
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap'); */
 
 
 * {
@@ -11,11 +11,12 @@
 body {
     line-height: 1.6;
     font-family: 'Open Sans', sans-serif;
-    /* background-color: rgb(250, 250, 250); */
     background-color: #fff;
     text-align: center;
-    color: rgb(74, 74, 74);
+    color: #707070;
     font-size: 1em;
+    margin: 0;
+    padding: 0;
 }
 
 main {
@@ -49,6 +50,10 @@ h4 {
     margin: 0;
 }
 
+footer {
+    color: #909090;
+}
+
 /* Layout Styles */
 
 .container {
@@ -61,7 +66,7 @@ h4 {
 
 .intro {
     margin-top: 50px;
-    color: rgb(250, 250, 250);
+    color: #909090;
 }
 
 .intro img {
@@ -116,6 +121,12 @@ main img {
     font-weight: 900;
 }
 
+footer a {
+    color: #707070;
+}
+
+
+
 /* ================================= 
   Media Queries
 ==================================== */
@@ -145,20 +156,6 @@ main img {
         margin-left: 10px;
     }
 
-    .main-sub-1,
-    .main-sub-3,
-    .main-sub-5 {
-        float: left;
-        width: 49%;
-    }
-
-    .main-sub-2,
-    .main-sub-4,
-    .main-sub-6 {
-        float: right;
-        width: 49%;
-    }
-
     .mobile-only {
         display: none;
     }
@@ -178,6 +175,27 @@ main img {
         margin: 0;
         padding: 0;
     }
+
+    .main-content{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .col {
+        float: left;
+    }
+
+    .main-sub {
+        width: 50%;
+        padding: 0 1em;
+    }
+
+    .article-wrap{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+
 
 }
 
@@ -216,27 +234,10 @@ main img {
         padding: 0 10em;
     }
 
-    .main-sub-1,
-    .main-sub-4 {
-        float: left;
-        width: 29%;
-        margin: 0 2%;
-       
+    .main-sub {
+        width: 33.3%;
     }
 
-    .main-sub-2,
-    .main-sub-5 {
-        width: 29%;
-        float: left;
-        margin: 0 2%;
-    }
-
-    .main-sub-3,
-    .main-sub-6 {
-        float: right;
-        width: 29%;
-        margin: 0 2%;
-    }
 
 }
 
